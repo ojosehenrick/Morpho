@@ -6,7 +6,7 @@
 
 # Ultra Battery
 	on property:persist.morpho.profile=1
-		write /sdcard/selected-profile 1
+		write /sdcard/Android/data/selected-profile 1
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_governor #governor
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
@@ -22,7 +22,7 @@
 
 # Battery
 	on property:persist.morpho.profile=2
-		write /sdcard/selected-profile 2
+		write /sdcard/Android/data/selected-profile 2
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_governor #governor
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
@@ -38,7 +38,7 @@
 		
 # Balanced
 	on property:persist.morpho.profile=3
-		write /sdcard/selected-profile 3
+		write /sdcard/Android/data/selected-profile 3
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_governor #governor
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
@@ -54,7 +54,7 @@
 		
 # Performance
 	on property:persist.morpho.profile=4
-		write /sdcard/selected-profile 4
+		write /sdcard/Android/data/selected-profile 4
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_governor #governor
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
@@ -70,7 +70,7 @@
 				
 # Gaming
 	on property:persist.morpho.profile=5
-		write /sdcard/selected-profile 5
+		write /sdcard/Android/data/selected-profile 5
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_governor #governor
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
@@ -207,13 +207,13 @@
 		setprop ro.sys.sdcardfs true
 		setprop sys.use_fifo_ui 1
 	# Selected Profile
-		if [ /sdcard/selected-profile == 1] then
+		if [ /sdcard/Android/data/selected-profile == 1] then
 			setprop persist.morpho.profile 1
-		if [ /sdcard/selected-profile == 2] then
+		if [ /sdcard/Android/data/selected-profile == 2] then
 			setprop persist.morpho.profile 2
-		if [ /sdcard/selected-profile == 3] then
+		if [ /sdcard/Android/data/selected-profile == 3] then
 			setprop persist.morpho.profile 3
-		if [ /sdcard/selected-profile == 4] then
+		if [ /sdcard/Android/data/selected-profile == 4] then
 			setprop persist.morpho.profile 4
-		if [ /sdcard/selected-profile == 5] then
+		if [ /sdcard/Android/data/selected-profile == 5] then
 			setprop persist.morpho.profile 5
