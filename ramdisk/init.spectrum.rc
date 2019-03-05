@@ -11,8 +11,8 @@
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
 		write /sys/module/workqueue/parameters/power_efficient #y-n
-		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-fre1
-		write /sys/class/kgsl/kgsl-3d0/devfreq/governor ####
+		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-freq
+		write /sys/class/kgsl/kgsl-3d0/devfreq/governor #gpu-governor
 		write /sys/module/adreno_idler/parameters/adreno_idler_active #y-n
 		write /dev/cpuset/background/cpus #cpus
 		write /dev/cpuset/camera-daemon/cpus #cpus
@@ -27,8 +27,8 @@
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
 		write /sys/module/workqueue/parameters/power_efficient #y-n
-		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-fre1
-		write /sys/class/kgsl/kgsl-3d0/devfreq/governor ####
+		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-freq
+		write /sys/class/kgsl/kgsl-3d0/devfreq/governor #gpu-governor
 		write /sys/module/adreno_idler/parameters/adreno_idler_active #y-n
 		write /dev/cpuset/background/cpus #cpus
 		write /dev/cpuset/camera-daemon/cpus #cpus
@@ -43,8 +43,8 @@
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
 		write /sys/module/workqueue/parameters/power_efficient #y-n
-		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-fre1
-		write /sys/class/kgsl/kgsl-3d0/devfreq/governor ####
+		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-freq
+		write /sys/class/kgsl/kgsl-3d0/devfreq/governor #gpu-governor
 		write /sys/module/adreno_idler/parameters/adreno_idler_active #y-n
 		write /dev/cpuset/background/cpus #cpus
 		write /dev/cpuset/camera-daemon/cpus #cpus
@@ -59,8 +59,8 @@
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
 		write /sys/module/workqueue/parameters/power_efficient #y-n
-		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-fre1
-		write /sys/class/kgsl/kgsl-3d0/devfreq/governor ####
+		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-freq
+		write /sys/class/kgsl/kgsl-3d0/devfreq/governor #gpu-governor
 		write /sys/module/adreno_idler/parameters/adreno_idler_active #y-n
 		write /dev/cpuset/background/cpus #cpus
 		write /dev/cpuset/camera-daemon/cpus #cpus
@@ -75,8 +75,8 @@
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/#governor/#tunable #governor-tunable-value
 		write /sys/devices/system/cpu/#cpu-number/cpufreq/scaling_max_freq #max-cpu-freq
 		write /sys/module/workqueue/parameters/power_efficient #y-n
-		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-fre1
-		write /sys/class/kgsl/kgsl-3d0/devfreq/governor ####
+		write /sys/class/kgsl/kgsl-3d0/max_gpuclk #max-gpu-freq
+		write /sys/class/kgsl/kgsl-3d0/devfreq/governor #gpu-governor
 		write /sys/module/adreno_idler/parameters/adreno_idler_active #y-n
 		write /dev/cpuset/background/cpus #cpus
 		write /dev/cpuset/camera-daemon/cpus #cpus
